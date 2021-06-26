@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --respawn src/index.ts",
-    "dev": "nodemon --exec ts-node src/index.ts",
-    "build": "tsc"
+    "start": "node dist/index.ts",
+    "dev": "nodemon dist/index.js",
+    "build": "tsc",
+    "watch": "tsc -w"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +25,11 @@
   "dependencies": {
     "cors": "^2.8.5",
     "deta": "^0.0.12",
+    "dotenv": "^10.0.0",
+    "dotenv-safe": "^8.2.0",
     "express": "^4.17.1",
-    "pg": "^8.6.0"
+    "nanoid": "^3.1.23",
+    "pg": "^8.6.0",
+    "yup": "^0.32.9"
   }
 }
