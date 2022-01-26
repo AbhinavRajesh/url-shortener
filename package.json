@@ -1,0 +1,19 @@
+{
+  "name": "weee",
+  "private": true,
+  "version": "1.0.0",
+  "repository": "git@github.com:AbhinavRajesh/url-shortener.git",
+  "author": "Abhinav Rajesh <abhinavrajesh49@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace @weee/web dev",
+    "dev:v1-server": "yarn workspace @weee/v1-server dev",
+    "dev:v1-client": "yarn workspace @weee/v1-client start",
+    "build": "yarn workspace @weee/web build",
+    "start": "yarn workspace @weee/web start",
+    "lint": "yarn workspace @weee/web lint"
+  }
+}
